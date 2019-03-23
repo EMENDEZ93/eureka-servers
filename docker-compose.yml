@@ -1,0 +1,18 @@
+version: '3.6'
+   
+   
+services:
+  eureka-server:
+    build: .
+    ports:
+      - 8761:8761
+    environment:
+      - example=my value 
+    volumes:
+      - javatmp:/tmp
+    
+volumes:
+  # default dir /var/lib/docker/volumes
+  javatmp:
+        
+      
